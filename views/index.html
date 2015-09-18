@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text.css">
+
+</head>
+<body>
+
+<div class="menu">
+
+    <ul id="browser1">
+        <li>
+            <div class="dir empty">
+                <a href="#">Folder 1 <small>(limited to 20 Directories)</small></a>
+            </div>
+        </li>
+    </ul>
+
+    <ul id="browser2">
+        <li>
+            <div class="dir empty">
+                <a href="#">Folder 2 <small>(unlimited)</small></a>
+            </div>
+        </li>
+    </ul>
+
+</div>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+
+<script src="/javascripts/main.js"></script>
+
+<script type="text/javascript">
+
+
+    var app1 = new fileBrowser;
+    var app2 = new fileBrowser;
+
+    app1({"id":"browser1", "maxDirs": 20});
+    app2({"id":"browser2"});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+    width: 100%;
+}
+
+a img {
+    float: left;
+}
+
+ul {
+    margin-left: 15px;
+    padding: 0;
+    background: url(/images/line.vertical.png) repeat-y 0 0;
+}
+
+li li:last-child {
+    background: #fff url(/images/line.vertical.png) no-repeat 0 -88px;
+}
+
+.dir, .file {
+    margin-left: 2px;
+    padding: 3px 0;
+    width: 100%;
+    background: url(/images/line.horizontal.png) repeat-x 0 10px;
+}
+
+.dir a, .file a {
+    display: inline-block;
+    width: 100%;height: 22px;
+    background-color: #fff;
+    line-height: 22px;
+    vertical-align: middle;
+}
+
+.dir > a {
+    margin-left: 10px;
+    padding-left: 27px;
+    background: #fff url(/images/folder.png) no-repeat 0 0;
+}
+
+.file > a {
+    padding-left: 27px;
+    background: #fff url(/images/f.png) no-repeat 0 0;
+}
+
+.dir > ul {
+    max-height: 0;
+    transition: height 0.2s ease;
+    -webkit-transition: height 0.2s ease;
+    overflow: hidden;
+}
+
+.open > ul {
+    max-height: 10000px;
+}
+
+.open > a {
+    background-image: url(/images/folder.open.png);
+}
+
+.file {
+    padding-left: 10px;
+}
+
